@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: secret-hunter-v2
+    runtime: docker
+    plan: free
+    envVars:
+      - key: AUTH_API_KEY
+        generateValue: true
+      - key: PYTHON_VERSION
+        value: "3.11"
